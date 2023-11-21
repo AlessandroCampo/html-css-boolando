@@ -15,9 +15,7 @@ header {
     top: 0;
 }
 
-footer {
-    background-color: #1a1a1a;
-}
+
 
 .header-container {
     width: 70%;
@@ -124,4 +122,36 @@ main {
 
 .original-price {
     text-decoration: line-through;
+}
+
+footer {
+    background-color: #1a1a1a;
+}
+
+.footer-container {
+    width: 70%;
+    margin: 0 auto;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-block: 2em;
+}
+
+.footer-info h3 {
+    padding-bottom: 0.5em;
+}
+
+.social-contaienr h4 {
+    padding-bottom: 0.5em;
+}
+
+.footer-info ul {
+    display: flex;
+    list-style-type: none;
+    gap: 1em;
+}
+
+.social-icons i {
+    padding-inline: 0.15em;
+    font-size: 1.1rem;
 }
