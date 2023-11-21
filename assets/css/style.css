@@ -87,6 +87,7 @@ main {
     position: absolute;
     left: 0;
     bottom: 6%;
+    z-index: 2;
 }
 
 .sustain {
@@ -97,6 +98,7 @@ main {
     position: absolute;
     left: 14.5%;
     bottom: 6%;
+    z-index: 2;
 }
 
 .heart {
@@ -158,4 +160,21 @@ footer {
 
 .sustain.attached {
     left: 0;
+}
+
+.heart:hover {
+    color: red;
+    cursor: pointer;
+    background-color: gray;
+}
+
+.pic-container:hover .hidden {
+    z-index: 0;
+}
+
+.hidden {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
