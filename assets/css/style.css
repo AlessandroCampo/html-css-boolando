@@ -6,6 +6,7 @@
 
 html {
     scroll-behavior: smooth;
+    font-size: 1rem;
 }
 
 header {
@@ -13,8 +14,13 @@ header {
     position: fixed;
     width: 100%;
     top: 0;
+    z-index: 2;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
 
 
 .header-container {
@@ -33,6 +39,12 @@ header ul {
     gap: 0.7em;
 }
 
+li:hover {
+    text-decoration: underline;
+    background-color: grey;
+    cursor: pointer;
+}
+
 header ul a {
     color: white;
     text-decoration: none;
@@ -41,7 +53,11 @@ header ul a {
 }
 
 header img {
-    width: 12%;
+    width: 20%;
+}
+
+header a {
+    text-align: center;
 }
 
 .icon-container svg {
@@ -170,11 +186,28 @@ footer {
 
 .pic-container:hover .hidden {
     z-index: 0;
+    cursor: pointer;
 }
+
 
 .hidden {
     position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
+}
+
+.social-icons a {
+    color: white;
+    text-decoration: none;
+}
+
+.up {
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    color: white;
+    background-color: #1a1a1a;
+    padding: 5px 15px;
+    border: 1px solid white;
 }
