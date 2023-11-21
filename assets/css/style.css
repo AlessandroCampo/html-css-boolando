@@ -4,9 +4,13 @@
     box-sizing: border-box;
 }
 
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;500;600;700&family=Domine:wght@700&family=Noto+Sans:wght@300;400;500;600;700;800;900&display=swap');
+
 html {
     scroll-behavior: smooth;
     font-size: 1rem;
+    font-family: 'Archivo Narrow', sans-serif;
 }
 
 header {
@@ -39,11 +43,30 @@ header ul {
     gap: 0.7em;
 }
 
+main {
+    padding-top: 80px;
+}
+
 li:hover {
     text-decoration: underline;
     background-color: grey;
     cursor: pointer;
 }
+
+#user:hover {
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 2px solid lightgray;
+    cursor: pointer;
+    background-color: lightgray;
+    font-size: 30px;
+    z-index: 5;
+}
+
+
+
+
 
 header ul a {
     color: white;
@@ -51,6 +74,60 @@ header ul a {
     font-size: 1.2rem;
     font-weight: 600;
 }
+
+/* .login {
+    display: none;
+} */
+
+.login {
+    position: fixed;
+    background-color: lightgray;
+    Visibility: hidden;
+}
+
+.cart {
+    visibility: hidden;
+    position: fixed;
+    right: 1.3%;
+    padding: 10px;
+    margin-top: -10px;
+}
+
+.cart-container {
+
+    background-color: lightgray;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+i.fa-regular {
+    padding: 5px;
+}
+
+.fa-user:hover,
+.fa-bag-shopping {
+    cursor: pointer;
+}
+
+.fa-bag-shopping:hover~.cart {
+    visibility: visible;
+}
+
+.cart:hover {
+    visibility: visible;
+}
+
+.login:hover {
+    visibility: visible;
+}
+
+
+.fa-user:hover~.login {
+    visibility: visible;
+}
+
 
 header img {
     width: 20%;
@@ -60,8 +137,31 @@ header a {
     text-align: center;
 }
 
-.icon-container svg {
-    fill: white;
+
+.login p {
+    color: black;
+}
+
+.login-container {
+    border: 1px solid black;
+    padding: 20px;
+    z-index: -1;
+}
+
+.login span a {
+    color: purple;
+}
+
+.login button {
+    display: block;
+    width: 100%;
+    background-color: #1a1a1a;
+    font-size: 16px;
+    padding-block: 5px;
+    margin-bottom: 5px;
+}
+
+.icon-container i {
     padding-inline: 2px;
 }
 
@@ -159,8 +259,8 @@ footer {
     padding-bottom: 0.5em;
 }
 
-.social-contaienr h4 {
-    padding-bottom: 0.5em;
+.social-contaienr h5 {
+    padding-bottom: 0.7em;
 }
 
 .footer-info ul {
