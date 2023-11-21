@@ -12,6 +12,7 @@ header {
     background-color: #ff6900;
     position: fixed;
     width: 100%;
+    top: 0;
 }
 
 footer {
@@ -48,4 +49,79 @@ header img {
 .icon-container svg {
     fill: white;
     padding-inline: 2px;
+}
+
+
+
+
+.card {
+    flex-basis: calc(100% / 3 - 1em)
+}
+
+.item-container {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* margin-block: 8em; */
+    row-gap: 2em;
+}
+
+.card img {
+    width: 100%;
+}
+
+main {
+    margin-top: 8em;
+    margin-bottom: 4em;
+}
+
+.pic-container {
+    position: relative;
+}
+
+.discount {
+    background: #ff0000;
+    color: white;
+    font-weight: 600;
+    padding: 5px 10px;
+    position: absolute;
+    left: 0;
+    bottom: 6%;
+}
+
+.sustain {
+    background: #008000;
+    color: white;
+    font-weight: 600;
+    padding: 5px 10px;
+    position: absolute;
+    left: 14.5%;
+    bottom: 6%;
+}
+
+.heart {
+    position: absolute;
+    right: 0;
+    top: 2%;
+    background-color: white;
+    color: black;
+    font-size: 1.5em;
+    padding: 0.5em;
+    fill: black;
+}
+
+
+.name {
+    font-weight: bolder;
+}
+
+.new-price {
+    color: red;
+    font-weight: bold;
+}
+
+.original-price {
+    text-decoration: line-through;
 }
