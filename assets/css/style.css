@@ -155,3 +155,7 @@ footer {
     padding-inline: 0.15em;
     font-size: 1.1rem;
 }
+
+.sustain.attached {
+    left: 0;
+}
